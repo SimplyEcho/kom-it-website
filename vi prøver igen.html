@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arctic Fox Hair Color</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function toggleMenu() {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        }
+    </script>
+</head>
+<body class="bg-white pt-16"> <!-- Added padding-top to prevent overlap with fixed navbar -->
+
+    <!-- Navigation Bar -->
+    <nav class="flex justify-between items-center px-6 py-4 shadow-md bg-white fixed top-0 left-0 w-full z-10"> <!-- Reduced padding (px-6 py-4) -->
+        <div class="flex items-center space-x-6">
+            <button class="text-3xl font-bold" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+            <img src="https://imgur.com/KvlLd7n.jpg" alt="Arctic Fox Logo" class="h-[100px] w-auto object-contain"> 
+        </div>
+        <div class="flex items-center space-x-6">
+            <button class="text-xl">🔍</button> <!-- Increased font size -->
+            <button class="text-xl">🛒</button> <!-- Increased font size -->
+            <button class="text-lg px-6 py-3 border border-black rounded">LOGIN</button> <!-- Increased font size and padding -->
+        </div>
+    </nav>
+
+    <!-- Hero Section with Full Image -->
+    <div class="relative mt-20"> <!-- Increased margin-top to move the image further down -->
+        <img src="https://imgur.com/C9jV2YF.jpg" alt="Colorful Hair" class="w-full h-[50vh] object-cover">
+    </div>
+
+    <!-- Section Below Hero -->
+    <div class="p-10 text-center">
+        <h2 class="text-3xl font-bold">Discover Vibrant Semi-Permanent Hair Dye Colors</h2>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="absolute top-20 left-0 w-full bg-white shadow-md hidden mt-20"> <!-- Increased mt-20 for more space -->
+        <ul class="p-6 space-y-4">
+            <li><a href="#" class="block p-3 hover:bg-gray-200" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#" class="block p-3 hover:bg-gray-200" onclick="toggleMenu()">Shop</a></li>
+            <li><a href="#" class="block p-3 hover:bg-gray-200" onclick="toggleMenu()">About</a></li>
+            <li><a href="#" class="block p-3 hover:bg-gray-200" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
